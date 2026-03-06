@@ -34,9 +34,9 @@ runs:
         cargo install \
           --git https://github.com/rojo-rbx/rbx-dom \
           --rev "${{ inputs.rbx-dom-rev }}" \
-          --path rbx_util \
           --locked \
-          --force
+          --force \
+          rbx_util
 
     - name: Convert file
       shell: bash
